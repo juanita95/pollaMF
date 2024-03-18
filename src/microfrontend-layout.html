@@ -1,24 +1,10 @@
 <single-spa-router>
-  <!--
-
-    This is the single-spa Layout Definition for your microfrontends.
-    See https://single-spa.js.org/docs/layout-definition/ for more information.
-
-  -->
-
-  <!-- Example layouts you might find helpful:
-
   <nav>
-    <application name="@org/navbar"></application>
+    <application name="@polla/mf-structure"></application>
   </nav>
-  <route path="settings">
-    <application name="@org/settings"></application>
-  </route>
-
-  -->
-
   <main>
-    <route default>
+    <redirect from="/" to="/ranking"></redirect>
+    <route path="/ranking">
       <application name="@polla/mf-ranking"></application>
     </route>
   </main>

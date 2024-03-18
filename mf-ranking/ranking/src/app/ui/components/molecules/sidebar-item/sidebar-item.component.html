@@ -1,0 +1,8 @@
+<li
+  [attr.aria-label]="menuItem.title"
+  (click)="logOut(menuItem.title)"
+  [routerLink]="menuItem.router"
+  tabindex="0"
+>
+  <a class="text-black">{{ menuItem.title }}</a>
+</li>

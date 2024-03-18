@@ -1,0 +1,12 @@
+<div>
+  <label [for]="buttonId" class="sr-only">{{buttonLabel}}</label>
+  <input
+    [id]="buttonId"
+    [type]="buttonType"
+    required
+    [ngClass]="buttonStyle"
+    [placeholder]="buttonLabel"
+    [formControl]="formControl"
+    (keyup)="getTextInput($event)"
+  />
+</div>

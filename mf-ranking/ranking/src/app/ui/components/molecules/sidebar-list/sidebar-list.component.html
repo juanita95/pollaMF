@@ -1,0 +1,5 @@
+<ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+  <ng-container *ngFor="let item of menuItems">
+    <app-sidebar-item [menuItem]="item"> </app-sidebar-item>
+  </ng-container>
+</ul>

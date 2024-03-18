@@ -1,0 +1,19 @@
+<table class="shadow-lg border-collapse">
+  <ng-container *ngFor="let property of properties">
+    <th tabindex="0" class="bg-stone-300 text-black border text-left px-8 py-4">
+      {{ property }}
+    </th>
+  </ng-container>
+  <tbody>
+    <tr
+      *ngFor="let cell of informationCell"
+      class="hover:bg-gray-50 hover:text-black focus:bg-gray-300 focus:text-black active:bg-red-200"
+      tabindex="0"
+    >
+      <td class="border px-8 py-4">{{ cell.picture }}</td>
+      <td class="border px-8 py-4">{{ cell.name }}</td>
+      <td class="border px-8 py-4">{{ cell.position }}</td>
+      <td class="border px-8 py-4">{{ cell.points }}</td>
+    </tr>
+  </tbody>
+</table>

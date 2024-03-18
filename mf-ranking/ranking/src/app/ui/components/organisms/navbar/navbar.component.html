@@ -1,0 +1,36 @@
+<div class="font-[Poppins] gradient">
+  <header class="bg-stone-300">
+    <nav class="flex justify-between items-center w-[92%] mx-auto">
+      <div>
+        <img
+          class="w-16 cursor-pointer"
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png"
+          alt="..."
+        />
+      </div>
+      <div
+        class="nav-links duration-500 md:static absolute bg-stone-300 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+      >
+        <app-sidebar-list> </app-sidebar-list>
+      </div>
+      <div class="flex items-center gap-6">
+        <button
+          class="bg-gray-700 text-white cursor-pointer px-5 py-2 rounded-full transition-colors duration-300 ease-in-out hover:bg-[#6a6a6a]"
+        >
+          Sign out
+        </button>
+
+        <img
+          src="assets/svg/navbar/menu.svg"
+          (click)="onToggleMenu(this)"
+          name="menu"
+          class="hover:bg-[#87acec]"
+        />
+      </div>
+    </nav>
+  </header>
+
+  <section class="mx-3">
+    <ng-content></ng-content>
+  </section>
+</div>
